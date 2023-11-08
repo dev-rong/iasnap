@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://ia-snap.vercel.app/sitemap.xml
+Host: https://ia-snap.vercel.app

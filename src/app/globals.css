@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  line-height: 1.5rem;
+}
+
+.carousel .slider {
+  height: 500px;
+}
+
+.beforeImage::before {
+ z-index: 99;
+ left: 12px;
+ content: 'BEFORE'
+}
+
+.labelImage::before {
+  color: #FFFFFF;
+  background-color: rgba(0,0,0, 0.55);
+  font-weight: 900;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.afterImage::before {
+ z-index: 0;
+ right: 12px;
+ content: 'AFTER'
+}
+
+.imageSlider::before, .imageSlider::after {
+  background-color: black;
+}
+
+.mainLogo {
+  --top-width: 64px;
+  --top-height: 64px;
+  --down-width: 48px;
+  --down-height: 48px;
+  
+  @media (min-width: 768px) {
+    --top-width: 96px;
+    --top-height: 96px;
+    --down-width: 64px;
+    --down-height: 64px;
+  }
+}
+
+.cake text {
+  /* 텍스트 스타일 설정 */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cake svg {
+  /* SVG 요소 스타일 설정 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; /* SVG 요소의 높이 설정 */
+  overflow: visible;
+  /* SVG 요소에 회전 애니메이션 적용을 위한 CSS 설정 */
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 80s;
+  -moz-animation-duration: 80s;
+  -ms-animation-duration: 80s;
+  -o-animation-duration: 80s;
+  animation-duration: 80s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+/* 회전 애니메이션을 정의하는 키프레임들 */
+@-webkit-keyframes rotate {
+  from { -webkit-transform: rotate(360deg); }
+  to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+  from { -moz-transform: rotate(360deg); }
+  to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+  from { -ms-transform: rotate(360deg); }
+  to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+  from { -o-transform: rotate(360deg); }
+  to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0); }
+}
