@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: www.iasnap.vercel.app
+Host: iasnap.vercel.app
 
 # Sitemaps
-Sitemap: www.iasnap.vercel.app/sitemap.xml
+Sitemap: iasnap.vercel.app/sitemap.xml

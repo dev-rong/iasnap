@@ -1,16 +1,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.iasnap.vercel.app</loc>
+    <loc>https://iasnap.vercel.app</loc>
     <changefreq>yearly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://www.iasnap.vercel.app/compare</loc>
+    <loc>https://iasnap.vercel.app/compare</loc>
     <changefreq>yearly</changefreq>
     <priority>2</priority>
   </url>
   <url>
-    <loc>https://www.iasnap.vercel.app/partners</loc>
+    <loc>https://iasnap.vercel.app/partners</loc>
     <changefreq>yearly</changefreq>
     <priority>3</priority>
   </url>
