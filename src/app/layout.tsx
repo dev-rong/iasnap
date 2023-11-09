@@ -30,8 +30,23 @@ const gmarketSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "이아스냅 갤러리 | IA SNAP",
-  description: "아름다운 순간을 기록하는 아이폰 스냅, 이토록 아름다운, 이아스냅",
+  title: "이아스냅 | IA SNAP",
+  description: "아름다운 순간을 기록하는 아이폰 스냅, 이아스냅",
+  metadataBase: new URL('https://iasnap.vercel.app'),
+  openGraph: {
+    title: "이아스냅 | IA SNAP",
+    description: "아름다운 순간을 기록하는 아이폰 스냅, 이아스냅",
+    url: 'https://iasnap.vercel.app',
+    siteName: '이아스냅',
+    images: 'https://iasnap.vercel.app/opengraph-image.jpg',
+    locale: 'ko_KR',
+    type: 'website'
+  },
+  twitter: {
+    title: "이아스냅 | IA SNAP",
+    description: "아름다운 순간을 기록하는 아이폰 스냅, 이아스냅",
+    images: 'https://iasnap.vercel.app/twitter-image.jpg',
+  } 
 };
 
 export default function RootLayout({
