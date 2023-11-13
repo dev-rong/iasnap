@@ -47,6 +47,8 @@ const Images: React.FC<ImageProps> = (data) => {
                   className="overflow-hidden"
                   showThumbs={false}
                   infiniteLoop
+                  preventMovementUntilSwipeScrollTolerance={true}
+                  swipeScrollTolerance={50}
                 >
                   {sources?.split(",").map(source => (
                     <Image
