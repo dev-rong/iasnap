@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 "use client";
 import { Carousel } from "react-responsive-carousel";
 import { easeIn, motion } from "framer-motion";
@@ -8,7 +9,7 @@ interface ImageProps {
   data: ImageInterface[];
 }
 
-const Images: React.FC<ImageProps> = (data) => {
+const Images: React.FC<ImageProps> = ({data}) => {
   const cdn="https://zvehuwjiyiiyexcxaail.supabase.co/storage/v1/object/public/image"; 
   const variants = {
     offscreen: {
@@ -27,9 +28,10 @@ const Images: React.FC<ImageProps> = (data) => {
 
   return(
     <div className='w-full h-full'>
+      {data?.length > 0 && <p className="mb-4 text-sm">결과: {data?.length}건</p>}
       <ul className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2"}>
         {
-          data.data?.map(({id, sources, ceremony, directory, region, subregion, venue}) => (
+          data?.map(({id, sources, ceremony, directory, region, subregion, venue}) => (
             <motion.li  
               initial="offscreen"
               whileInView="onscreen"
@@ -50,7 +52,7 @@ const Images: React.FC<ImageProps> = (data) => {
                   preventMovementUntilSwipeScrollTolerance={true}
                   swipeScrollTolerance={50}
                 >
-                  {sources?.split(",").map(source => (
+                  {sources?.split(",").map((source) => (
                     <Image
                       key={id}
                       alt='이아 스냅 포트폴리오 예시'

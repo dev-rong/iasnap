@@ -17,12 +17,12 @@ const PageContent: React.FC<ImageProps> = ({images, error}) => {
   const [imageState, setImageState] = useState<ImageInterface[] | []>(images || []);
   const [searchKeywords, setSearchKeywords] = useState<string>("");
   const [isVisible, setIsVisible] = useState<boolean>(false);
-
+  
   const themes: Theme[] = [
     {id:1, ceremony:"리허설", name:"스튜디오 스냅"}, 
     {id:2, ceremony:"리허설", name:"가봉 스냅"}, 
     {id:3, ceremony:"본식", name:"밝은 홀"}, 
-    {id:4, ceremony:"본식", name:"어두운 홀"},  
+    {id:4, ceremony:"본식", name:"어두운 홀"}
   ];
 
   useEffect(() => { 
@@ -62,7 +62,7 @@ const PageContent: React.FC<ImageProps> = ({images, error}) => {
       setImageState(filteredImages);
     } else {
       setImageState([]);
-    } 
+    }
   };
    
   const themesClickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -111,7 +111,7 @@ const PageContent: React.FC<ImageProps> = ({images, error}) => {
         searchInputHandler={searchInputHandler}
         searchSubmitHandler={searchSubmitHandler}
       />
-      <div className={"z-10 mb-4 w-full text-sm flex flex-row items-center"}>
+      <div className={"z-10 w-full text-sm flex flex-row items-center"}>
         <Select selectChangeHandler={selectChangeHandler}/>
         <Themes data={themes} themesClickHandler={themesClickHandler}/>
       </div>
