@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Frank_Ruhl_Libre} from "next/font/google";
@@ -61,6 +62,7 @@ export default function RootLayout({
           <Header/>
           <main className='flex flex-col px-2 min-h-screen'>{children}</main>
           <Footer/>
+          <Analytics />
         </body> 
       </Suspense>
     </html>
