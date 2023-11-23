@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('./fonts/GmarketSansMedium.woff2') format('woff2'),
+      url('./fonts/GmarketSansMedium.woff') format('woff'),
+      url('./fonts/GmarketSansMedium.otf') format('otf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('./fonts/GmarketSansBold.woff2') format('woff2'),
+      url('./fonts/GmarketSansBold.woff') format('woff'),
+      url('./fonts/GmarketSansBold.otf') format('otf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+body, .footer-name {
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.title {
+  font-family: 'GmarketSansBold', sans-serif;
+
+}
+
 p {
   line-height: 1.5rem;
 }
@@ -13,7 +42,7 @@ p {
 .beforeImage::before {
  z-index: 99;
  left: 12px;
- content: 'BEFORE'
+ content: 'BEFORE';
 }
 
 .labelImage::before {
@@ -32,7 +61,7 @@ p {
 .afterImage::before {
  z-index: 0;
  right: 12px;
- content: 'AFTER'
+ content: 'AFTER';
 }
 
 .imageSlider::before, .imageSlider::after {

@@ -2,8 +2,7 @@ import React from "react";
 import getImages from "@/lib/getImages";
 import PageContent from "@/components/PageContent";
 import { ImageInterface } from "../../types/types";
-export const revalidate = 0;
-
+export const revalidate =  31536000;
 
 export default async function Home() {
   const response = await getImages();
@@ -17,7 +16,7 @@ export default async function Home() {
   }
   return (
     <div className={"w-full md:max-w-5xl mx-auto flex min-h-screen flex-col items-center"}>
-      <div className='w-full font-sans text-title'>
+      <div className='w-full font-frank text-title'>
         <h1 className='relative uppercase text-center md:h-32 max-sm:text-4xl sm:max-md:text-6xl md:text-9xl'>
             ia snap
         </h1>

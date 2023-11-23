@@ -2,32 +2,16 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Frank_Ruhl_Libre} from "next/font/google";
-import localFont from "next/font/local";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Suspense } from "react";
 import Loading from "./loading";
-export const revalidate = 0;
+export const revalidate =  31536000;
 
 const frank = Frank_Ruhl_Libre({ 
   subsets: ["latin"],
   display: "swap",
   variable: "--font-frank"
-});
-
-const gmarketSans = localFont({
-  src: [
-    {
-      path: "./fonts/GmarketSansMedium.otf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./fonts/GmarketSansBold.otf",
-      weight: "900",
-      style: "normal",
-    },
-  ]
 });
 
 export const metadata: Metadata = {
@@ -58,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="ko-KR">
       <Suspense fallback={<Loading/>}>
-        <body className={`${frank.variable} ${gmarketSans.className} bg-background w-full md:max-w-5xl mx-auto`}>
+        <body className={`${frank.variable} bg-background w-full md:max-w-5xl mx-auto`}>
           <Header/>
           <main className='flex flex-col px-2 min-h-screen'>{children}</main>
           <Footer/>

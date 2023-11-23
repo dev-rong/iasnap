@@ -46,7 +46,7 @@ const CompareSlider = () => {
       initial="hidden"
       animate="show"
       className='py-4 md:px-4 md:py-12'>
-      <motion.h2 variants={items} className="text-xl sm:text-2xl md:text-4xl text-title font-black">이아스냅 보정 미리보기</motion.h2>
+      <motion.h2 variants={items} className="text-xl sm:text-2xl md:text-4xl text-title title">이아스냅 보정 미리보기</motion.h2>
       <motion.p  variants={items}
         initial="hidden"
         animate="show" 

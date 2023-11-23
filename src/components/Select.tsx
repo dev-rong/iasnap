@@ -13,7 +13,7 @@ const Select: React.FC<SelectProps> = ({selectChangeHandler}) => {
       <select 
         id="ceremonies"
         name="ceremonies"
-        className='p-2 mr-4 font-gmarketM'
+        className='p-2 mr-4'
         onChange={(e)=>selectChangeHandler(e)}>
         {eventOptions.map((item, index) => (
           <option key={index} value={item}>{item}</option>
