@@ -45,7 +45,7 @@ const Header = () => {
         >
           <Image
             fill={true}
-            sizes="(min-width: 768px) 64px"
+            sizes="(min-width: 768px) 64px (max-width: 1200px) 96px"
             style={{
               objectFit:"contain"
             }}
@@ -57,7 +57,7 @@ const Header = () => {
         </motion.div>
       </Link>
       <nav className='w-full max-w-[15rem] md:max-w-[30rem] inline-flex items-center'>
-        <ul className='w-full flex justify-between text-sm md:text-2xl text-title font-sans font-semibold'>
+        <ul className='w-full flex justify-between text-sm md:text-2xl text-title font-frank font-semibold'>
           {links.map(link => (
             <li key={link.href}>
               <Link 

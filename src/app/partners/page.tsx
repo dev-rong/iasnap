@@ -34,7 +34,7 @@ const Partners = () => {
       animate="show"
       className="py-4 md:px-4 md:py-12 relative">
       <motion.div variants={items} className="flex gap-4 items-center">
-        <h2 className="text-xl sm:text-2xl md:text-4xl text-title font-black">이아스냅 제휴업체</h2>
+        <h2 className="text-xl sm:text-2xl md:text-4xl text-title title">이아스냅 제휴업체</h2>
         <h3 className="text-lg md:text-4xl font-black text-background bg-title p-1">5% 할인</h3>
       </motion.div>
         
