@@ -8,12 +8,18 @@ interface SelectProps {
 const Select: React.FC<SelectProps> = ({selectChangeHandler}) => {
   const eventOptions = ["전체", "리허설", "본식"];
   return (
-    <select className='p-2 mr-4' name='ceremonies' 
-      onChange={(e)=>selectChangeHandler(e)}>
-      {eventOptions.map((item, index) => (
-        <option key={index} value={item}>{item}</option>
-      ))}
-    </select>   
+    <>
+      <label htmlFor="ceremonies" className="sr-only">형식 선택</label>
+      <select 
+        id="ceremonies"
+        name="ceremonies"
+        className='p-2 mr-4'
+        onChange={(e)=>selectChangeHandler(e)}>
+        {eventOptions.map((item, index) => (
+          <option key={index} value={item}>{item}</option>
+        ))}
+      </select>   
+    </>    
   );
 };
 

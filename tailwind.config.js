@@ -15,7 +15,7 @@ module.exports = {
       "title": "#B06F6F",
       "pink": "#F4C5C6",
       "text": "#442C2E",
-      "gray" : "#AEAEAE",
+      "gray": "#E5E7EB"
     },
     extend: {
       backgroundImage: {
@@ -24,7 +24,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        sans: ["var(--font-frank)"],
+        frank: ["var(--font-frank)"]
       },
     },
   },
