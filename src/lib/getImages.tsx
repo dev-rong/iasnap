@@ -1,7 +1,6 @@
 import { cache } from "react";
 import supabase from "@/app/supabase";
 import {ImageInterface} from "../../types/types";
-export const revalidate = 0;
 
 const getImages = cache(async (): Promise<(ImageInterface[] | { error: string })> => {
   try {
