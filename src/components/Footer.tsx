@@ -13,7 +13,7 @@ const Footer = () => {
           alt="이아스냅 로고"
           width={200}
           height={200}
-          className="cursor-pointer w-[100px] h-[100px] md:w-[200px] md:h-[200px]"
+          className="cursor-pointer aspect-square w-[100px] h-[100px] md:w-[200px] md:h-[200px]"
         />
         <span className="sr-only">홈으로 가기</span>
       </Link>
