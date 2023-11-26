@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Suspense } from "react";
 import Loading from "./loading";
-export const revalidate =  31536000;
+export const revalidate =  0;
 
 const frank = Frank_Ruhl_Libre({ 
   subsets: ["latin"],
