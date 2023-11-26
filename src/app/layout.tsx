@@ -1,13 +1,13 @@
 import { Analytics } from "@vercel/analytics/react";
+import dynamic from "next/dynamic";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Frank_Ruhl_Libre} from "next/font/google";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Suspense } from "react";
 import Loading from "./loading";
-export const revalidate =  0;
-
+export const revalidate = 31536000;
+const Footer = dynamic(() => import("@/components/Footer"), {ssr: false});
 const frank = Frank_Ruhl_Libre({ 
   subsets: ["latin"],
   display: "swap",

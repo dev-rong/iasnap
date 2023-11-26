@@ -2,7 +2,7 @@ import React from "react";
 import getImages from "@/lib/getImages";
 import PageContent from "@/components/PageContent";
 import { ImageInterface } from "../../types/types";
-export const revalidate =  0;
+export const revalidate = 31536000;
 
 export default async function Home() {
   const response = await getImages();

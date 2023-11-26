@@ -8,8 +8,9 @@ import PlaceholderImage from "./PlaceholderImage";
 import Search from "./Search";
 import Select from "./Select";
 import Images from "./Images";
-import NotFound from "./NotFound";
 import Themes from "./Themes";
+import dynamic from "next/dynamic";
+const NotFound = dynamic(() => import("./NotFound"), { ssr: false });
 interface ImageProps {
   images?: ImageInterface[];
   error?: string;
