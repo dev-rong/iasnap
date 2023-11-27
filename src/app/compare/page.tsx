@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 const CompareSlider = () => {
   const [imageSrc, setImageSrc] = useState<string>("1");
+  const [isLoading, setLoading] = useState(true);
   const variants = {
     hidden: { opacity: 0 },
     show: {
@@ -75,20 +76,26 @@ const CompareSlider = () => {
                 <Image
                   width={80}
                   height={100}
-                  className="w-[80px] h-[100px]"
+                  className={`${isLoading
+                    ? "blur-xl grayscale"
+                    : "blur-0 grayscale-0"} transition ease-in-out duration-1000 w-[80px] h-[100px]`}
                   priority
                   alt="첫 번째 보정 전 사진"
                   src={"/before1_censored.webp"}
+                  onLoad={() => setLoading(false)}
                 />
               </li>
               <li id='2' onClick={(e)=>imageSrcHandler(e)} style={getBeforeStyle("2")}>
                 <Image
                   width={80}
                   height={100}
-                  className="w-[80px] h-[100px]"
+                  className={`${isLoading
+                    ? "blur-xl grayscale"
+                    : "blur-0 grayscale-0"} transition ease-in-out duration-1000 w-[80px] h-[100px]`}
                   priority
                   alt="두 번째 보정 전 사진"
                   src={"/before2_censored.webp"}
+                  onLoad={() => setLoading(false)}
                 />
               </li>
             </motion.ul>

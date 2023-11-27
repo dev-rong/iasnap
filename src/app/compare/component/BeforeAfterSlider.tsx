@@ -9,6 +9,7 @@ interface BeforeAfterSliderProps {
 const BeforeAfterSlider = ({ imgSrc }: BeforeAfterSliderProps) => {
   const [sliderPosition, setSliderPosition] = useState(55);
   const [isDragging, setIsDragging] = useState(false);
+  const [isLoading, setLoading] = useState(true);
   const items = {
     hidden: {
       opacity: 0,
@@ -59,26 +60,32 @@ const BeforeAfterSlider = ({ imgSrc }: BeforeAfterSliderProps) => {
         onMouseDown={handleMouseDown}
       >
         <Image
-          className='min-w-[250px] min-h-[600px] md:min-w-[600px] md:min-h-[800px] pointer-events-none'
+          className={`${isLoading
+            ? "blur-xl grayscale"
+            : "blur-0 grayscale-0"} z-[-1] relative transition ease-in-out duration-1000 min-w-[250px] min-h-[600px] md:min-w-[600px] md:min-h-[800px] pointer-events-none`}
           width={600}
           height={800}
           style={{width:"auto", height:"auto"}}
           alt="보정 후"
           priority         
           src={`/after${imgSrc}_censored.webp`}
+          onLoad={() => setLoading(false)}
         />
         <div
           className="absolute top-0 left-0 max-w-[600px] m-auto overflow-hidden select-none labelImage beforeImage"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <Image
-            className='min-w-[250px] min-h-[600px] md:min-w-[600px] md:min-h-[800px] pointer-events-none'
+            className={`${isLoading
+              ? "blur-xl grayscale"
+              : "blur-0 grayscale-0"} transition ease-in-out duration-1000 min-w-[250px] min-h-[600px] md:min-w-[600px] md:min-h-[800px] pointer-events-none`}
             width={600}
             height={800}
             style={{width:"auto", height:"auto"}}
             priority
             alt="보정 전"
             src={`/before${imgSrc}_censored.webp`}
+            onLoad={() => setLoading(false)}    
           />
         </div>
         <div

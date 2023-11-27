@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Partners = () => {
+  const [isLoading, setLoading] = useState(true);
   const variants = {
     hidden: { opacity: 0 },
     show: {
@@ -80,10 +82,13 @@ const Partners = () => {
             width={600}
             height={800}
             style={{height:"auto"}}
-            className="w-full h-full lg:w-[530px]"
+            className={`${isLoading
+              ? "blur-xl grayscale"
+              : "blur-0 grayscale-0"} transition ease-in-out duration-1000 w-full h-full lg:w-[530px]`}
             priority
             alt="로즈의 케이크 하우스 프로모션 이미지"
             src={"/rose-main.svg"}
+            onLoad={() => setLoading(false)}
           />
           <span className="sr-only">이아스냅의 제휴 업체 로즈의 케이크 하우스에서는 답례품, 상견례 선물, 첫 인사 선물, 명절 선물, 기념일 케이크를 주문받습니다.
                             5% 할인은 최초 1회 주문 시에만 적용되며 2주 전까지 예약해주셔야 합니다.
@@ -97,9 +102,13 @@ const Partners = () => {
             width={450}
             height={450}
             style={{padding:"1.5rem", aspectRatio:"1/1"}}
+            className={`${isLoading
+              ? "blur-xl grayscale"
+              : "blur-0 grayscale-0"} transition ease-in-out duration-1000`}
             priority
             alt="로즈의 케이크 하우스 예시 케이크"
             src={"/rose-cake.png"}
+            onLoad={() => setLoading(false)}
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -132,9 +141,13 @@ const Partners = () => {
           width={400}
           height={450}
           style={{width:"400px", height:"450px"}}
+          className={`${isLoading
+            ? "blur-xl grayscale"
+            : "blur-0 grayscale-0"} transition ease-in-out duration-1000`}
           priority
           alt="로즈의 케이크 하우스 예시 상품"
           src={"/rose-gift.png"}
+          onLoad={() => setLoading(false)}
         />
       </motion.div>
          
