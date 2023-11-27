@@ -65,8 +65,8 @@ const Images: React.FC<ImageProps> = ({data}: ImageProps) => {
                       }}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className={`${isLoading
-                        ? "opacity-0"
-                        : "opacity-100"} transition-opacity ease-in-out duration-1000 w-full h-auto`}
+                        ? "blur-xl grayscale"
+                        : "blur-0 grayscale-0"} transition ease-in-out duration-1000 w-full h-auto`}
                       onLoad={() => setLoading(false)}
                     />
                   ))}
