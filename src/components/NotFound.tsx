@@ -6,7 +6,7 @@ const NotFound = () => {
     <div className='relative h-[400px] md:h-[500px] w-full flex flex-col lg:flex-row justify-center items-center'>
       <Image
         alt='이아스냅 로고'
-        src={"/logo-notfound.svg"}
+        src={"/logo-notfound.webp"}
         priority
         width={300}
         height={300}

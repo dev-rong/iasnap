@@ -53,7 +53,7 @@ const Partners = () => {
             style={{minWidth:"24px", minHeight:"24px", maxWidth:"36px", maxHeight:"36px"}}
             className="w-[24px] h-[24px] md:w-[36px] md:h-[36px] inline-block mr-3"
             alt="인스타그램 아이콘"
-            src={"/instagram-icon.png"}
+            src={"/instagram-icon.webp"}
           />
           <p className="text-sm sm:text-base md:text-xl inline-block underline decoration-[5px] decoration-[#d7ac9a91]">@rose_cake_house_official</p>
         </a>
@@ -70,7 +70,7 @@ const Partners = () => {
             style={{minWidth:"24px", minHeight:"24px", maxWidth:"36px", maxHeight:"36px"}}
             className="w-[24px] h-[24px] md:w-[36px] md:h-[36px] inline-block mr-3"
             alt="네이버 블로그 아이콘"
-            src={"/naver-blog-icon.png"}
+            src={"/naver-blog-icon.webp"}
           />
           <p className="text-sm sm:text-base md:text-xl inline-block underline decoration-[5px] decoration-[#d7ac9a91]">@rosecakehouse</p>
         </a>
@@ -87,7 +87,7 @@ const Partners = () => {
               : "blur-0 grayscale-0"} transition ease-in-out duration-1000 w-full h-full lg:w-[530px]`}
             priority
             alt="로즈의 케이크 하우스 프로모션 이미지"
-            src={"/rose-main.svg"}
+            src={"/rose-main.webp"}
             onLoad={() => setLoading(false)}
           />
           <span className="sr-only">이아스냅의 제휴 업체 로즈의 케이크 하우스에서는 답례품, 상견례 선물, 첫 인사 선물, 명절 선물, 기념일 케이크를 주문받습니다.
@@ -107,7 +107,7 @@ const Partners = () => {
               : "blur-0 grayscale-0"} transition ease-in-out duration-1000`}
             priority
             alt="로즈의 케이크 하우스 예시 케이크"
-            src={"/rose-cake.png"}
+            src={"/rose-cake.webp"}
             onLoad={() => setLoading(false)}
           />
           <svg
@@ -146,7 +146,7 @@ const Partners = () => {
             : "blur-0 grayscale-0"} transition ease-in-out duration-1000`}
           priority
           alt="로즈의 케이크 하우스 예시 상품"
-          src={"/rose-gift.png"}
+          src={"/rose-gift.webp"}
           onLoad={() => setLoading(false)}
         />
       </motion.div>
