@@ -31,7 +31,7 @@ const Footer = () => {
               style={{maxWidth:"36px", maxHeight:"36px"}}
               priority
               alt="인스타그램 아이콘"
-              src={"/instagram-icon.png"}
+              src={"/instagram-icon.webp"}
             />
           </a>
           <a
@@ -46,7 +46,7 @@ const Footer = () => {
               style={{maxWidth:"36px", maxHeight:"36px"}}
               priority
               alt="네이버 블로그 아이콘"
-              src={"/naver-blog-icon.png"}
+              src={"/naver-blog-icon.webp"}
             />
           </a>
           <a
@@ -61,7 +61,7 @@ const Footer = () => {
               style={{maxWidth:"36px", maxHeight:"36px"}}
               priority
               alt="카카오 채널 아이콘"
-              src={"/kakao-icon.png"}
+              src={"/kakao-icon.webp"}
             />
           </a>
         </div>
