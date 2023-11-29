@@ -65,7 +65,7 @@ const Footer = () => {
             />
           </a>
         </div>
-        <p className="text-sm md:text-base font-frank text-brown text-right">© {year}. <span className="footer-name">이아스냅</span> <br></br> ALL RIGHTS RESERVED.</p>
+        <p className="text-sm md:text-base font-frank text-title text-right">© {year}. <span className="footer-name">이아스냅</span> <br></br> ALL RIGHTS RESERVED.</p>
       </div>
     </footer>
   );
