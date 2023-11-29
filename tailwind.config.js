@@ -12,9 +12,8 @@ module.exports = {
       "beige": "#F4D7C9",
       "brown": "#D7AC9A",
       "dark-brown": "#D7886D",
-      "title": "#B06F6F",
+      "title": "#873C26",
       "pink": "#F4C5C6",
-      "text": "#442C2E",
       "gray": "#E5E7EB"
     },
     extend: {
