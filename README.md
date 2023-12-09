@@ -1,3 +1,15 @@
+<div>
+<a href="https://iasnap.vercel.app">
+  <img src="/public/logo.png" alt="iasnap logo" align="right" height="100" />
+</a> 
+<h1>IA SNAP</h1>
+</div>
+
+[IA SNAP(이아스냅)](https://iasnap.vercel.app)은 웨딩 아이폰 스냅 이아스냅의 홈페이지입니다.
+- 예식장/스튜디오 위치, 이름, 사진 종류 등으로 포트폴리오 사진 검색, 분류
+- 보정 전후 사진 슬라이드 비교
+- 제휴 업체 정보 및 SNS 링크
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
