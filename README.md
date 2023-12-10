@@ -5,6 +5,10 @@
 <h1>IA SNAP</h1>
 </div>
 
+
+https://github.com/dev-rong/iasnap/assets/96870030/657ec9a5-b013-4689-b427-26013e262873
+
+
 [IA SNAP(이아스냅)](https://iasnap.vercel.app)은 웨딩 아이폰 스냅 이아스냅의 홈페이지입니다.
 - 예식장/스튜디오 위치, 이름, 사진 종류 등으로 포트폴리오 사진 검색, 분류
 - 보정 전후 사진 슬라이드 비교
