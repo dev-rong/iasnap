@@ -83,19 +83,16 @@ p {
 }
 
 .cake text {
-  /* 텍스트 스타일 설정 */
   font-size: 16px;
   font-weight: bold;
 }
 
 .cake svg {
-  /* SVG 요소 스타일 설정 */
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%; /* SVG 요소의 높이 설정 */
+  width: 100%;
   overflow: visible;
-  /* SVG 요소에 회전 애니메이션 적용을 위한 CSS 설정 */
   -webkit-animation-name: rotate;
   -moz-animation-name: rotate;
   -ms-animation-name: rotate;
@@ -118,7 +115,6 @@ p {
   animation-timing-function: linear;
 }
 
-/* 회전 애니메이션을 정의하는 키프레임들 */
 @-webkit-keyframes rotate {
   from { -webkit-transform: rotate(360deg); }
   to { -webkit-transform: rotate(0); }

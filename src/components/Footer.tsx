@@ -29,7 +29,6 @@ const Footer = () => {
               width={24}
               height={24}
               style={{maxWidth:"36px", maxHeight:"36px"}}
-              priority
               alt="인스타그램 아이콘"
               src={"/instagram-icon.webp"}
             />
@@ -44,7 +43,6 @@ const Footer = () => {
               width={24}
               height={24}
               style={{maxWidth:"36px", maxHeight:"36px"}}
-              priority
               alt="네이버 블로그 아이콘"
               src={"/naver-blog-icon.webp"}
             />
@@ -59,7 +57,6 @@ const Footer = () => {
               width={24}
               height={24}
               style={{maxWidth:"36px", maxHeight:"36px"}}
-              priority
               alt="카카오 채널 아이콘"
               src={"/kakao-icon.webp"}
             />
