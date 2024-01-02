@@ -58,7 +58,7 @@ const Images: React.FC<ImageProps> = ({data}: ImageProps) => {
                       key={id}
                       alt='이아 스냅 포트폴리오 예시'
                       src={`${cdn}/${directory}/${source}`}
-                      priority={true}
+                      priority={source?.at(-5)==="1"}
                       fill={true}
                       style={{
                         objectFit:"cover",
@@ -82,7 +82,6 @@ const Images: React.FC<ImageProps> = ({data}: ImageProps) => {
           ))  
         }     
       </ul>
-
     </div>
   );
 };

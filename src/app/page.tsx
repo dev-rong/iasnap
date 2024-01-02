@@ -1,6 +1,6 @@
 import React from "react";
 import getImages from "@/lib/getImages";
-import PageContent from "@/components/PageContent";
+import Gallery from "@/components/Gallery";
 import { ImageInterface } from "../../types/types";
 export const revalidate = 31536000;
 
@@ -27,7 +27,7 @@ export default async function Home() {
           <span className="inline-block absolute md:w-1/5 max-md:w-1/6 h-[2px] bg-title right-0 top-1/2"></span>
         </p>
       </div>
-      <PageContent images={images} error={error}/>
+      <Gallery images={images} error={error}/>
     </div>
   );
 }
