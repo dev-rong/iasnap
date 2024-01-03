@@ -4,8 +4,8 @@ import {ImageInterface} from "../../types/types";
 
 const getImages = cache(async (): Promise<(ImageInterface[] | { error: string })> => {
   try {
-    const query = supabase.from("images").select("*").order("order");
-    // const query = supabase.from("images").select("*").range(0,1); //TODO
+    // const query = supabase.from("images").select("*").order("order");
+    const query = supabase.from("images").select("*").range(0,3).order("order"); //TODO
     const { data, error } = await query;
     if (error) {
       console.error(`Error fetching data: ${error.message}`);

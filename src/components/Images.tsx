@@ -30,7 +30,7 @@ const Images: React.FC<ImageProps> = ({data}: ImageProps) => {
   return(
     <div className='w-full h-full'>
       {data?.length > 0 && <p className="mb-4 text-sm">결과: {data?.length}건</p>}
-      <ul className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2"}>
+      <ul className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-2"}>
         {
           data.map(({id, sources, ceremony, directory, region, subregion, venue}) => (
             <motion.li  
@@ -61,7 +61,7 @@ const Images: React.FC<ImageProps> = ({data}: ImageProps) => {
                       priority={source?.at(-5)==="1"}
                       fill={true}
                       style={{
-                        objectFit:"cover",
+                        objectFit:"fill"
                       }}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className={`${isLoading
