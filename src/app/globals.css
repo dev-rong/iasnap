@@ -36,10 +36,7 @@ p {
 }
 
 .carousel .slide {
-  min-height: 400px;
-  @media (min-width: 768px) {
-    min-height: 500px;
-  }
+  height: 500px;
 }
 
 .beforeImage::before {
