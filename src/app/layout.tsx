@@ -31,9 +31,12 @@ export const metadata: Metadata = {
     title: "이아스냅 | IA SNAP",
     description: "아름다운 순간을 기록하는 아이폰 스냅, 이아스냅",
     images: "https://iasnap.vercel.app/twitter-image.jpg",
-  } 
+  } ,
+  other: {
+    name: "google-site-verification",
+    content: "1ttWWHTrG_PEI8t58Cc4nOxNKQjxS-iprbfPb7xYEyI"
+  }
 };
-
 export default function RootLayout({
   children,
 }: {
