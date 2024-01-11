@@ -15,6 +15,7 @@ const frank = Frank_Ruhl_Libre({
 });
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: "이아스냅 | IA SNAP",
   description: "아름다운 순간을 기록하는 아이폰 스냅, 이아스냅",
   metadataBase: new URL("https://iasnap.vercel.app"),
@@ -33,8 +34,7 @@ export const metadata: Metadata = {
     images: "https://iasnap.vercel.app/twitter-image.jpg",
   } ,
   other: {
-    name: "google-site-verification",
-    content: "1ttWWHTrG_PEI8t58Cc4nOxNKQjxS-iprbfPb7xYEyI"
+    "google-site-verification" : "1ttWWHTrG_PEI8t58Cc4nOxNKQjxS-iprbfPb7xYEyI"
   }
 };
 export default function RootLayout({
